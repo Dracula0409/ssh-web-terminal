@@ -1,0 +1,91 @@
+/* Reset and fullscreen layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login container box */
+.box {
+  background-color: #1e1e1e;
+  padding: 40px 28px 32px 28px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Heading */
+.box h2 {
+  text-align: center;
+  color: #ffa500;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  
+}
+
+/* Inputs (host, port, username, password) */
+.box input {
+  background-color: #f4f4f4;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+}
+
+/* Remove spinner from number input */
+.box input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.box input[type="number"]::-webkit-outer-spin-button,
+.box input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Highlight on focus */
+.box input:focus {
+  box-shadow: 0 0 0 2px #ffa50055;
+}
+
+/* Button */
+.box button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.box button:hover {
+  background-color: #ff9000;
+  transform: translateY(-1px);
+}
